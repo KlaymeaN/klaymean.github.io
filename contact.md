@@ -13,5 +13,5 @@ permalink: /contact/
 
 
 
-## Here You see the ways you can contact me:
-    You can reach me at: nezamivand.amirhossein@gmail.com
+## You can reach me at: nezamivand.amirhossein@gmail.com
+    
