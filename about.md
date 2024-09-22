@@ -1,2 +1,12 @@
-About me:
+---
+layout: page
+title: About
+permalink: /about/
+---
+
+
+
+
+
+ ## About me:
 Engineering Student
