@@ -7,7 +7,7 @@ body, html {
 
 /* Set the background */
 body {
-    background: url('images/background.gif') no-repeat center center fixed; /* Adjust the path as needed */
+    background: url('../../images/background.gif') no-repeat center center fixed; /* Adjust the path as needed */
     background-size: cover; /* Make the background cover the entire area */
     color: #333; /* Default text color */
     font-family: Arial, sans-serif;
