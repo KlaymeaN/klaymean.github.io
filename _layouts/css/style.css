@@ -1,0 +1,52 @@
+/* Reset some default styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%; /* Ensure the body takes the full height */
+}
+
+/* Set the background */
+body {
+    background: url('images/background.gif') no-repeat center center fixed; /* Adjust the path as needed */
+    background-size: cover; /* Make the background cover the entire area */
+    color: #333; /* Default text color */
+    font-family: Arial, sans-serif;
+}
+
+/* Header styles */
+header {
+    background-color: rgba(0, 123, 255, 0.8); /* Slightly transparent blue header */
+    color: #ffffff; /* White text in header */
+    padding: 20px;
+}
+
+/* Navigation styles */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff; /* White links */
+}
+
+/* Main content styles */
+main {
+    padding: 20px;
+    text-align: center; /* Centering the text */
+}
+
+/* Footer styles */
+footer {
+    background-color: rgba(241, 241, 241, 0.8); /* Slightly transparent light grey footer */
+    color: #333; /* Dark text in footer */
+    text-align: center;
+    padding: 10px;
+}
