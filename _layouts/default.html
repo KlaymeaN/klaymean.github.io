@@ -1,31 +1,33 @@
 <!DOCTYPE html>
-
-{% include header.html %}
-
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ page.title }} - {{ site.title }}</title>
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
-
- <link rel="icon" type="image/png" href="{{ '/images/lam.png' | relative_url }}">
-
   
-  <!-- Add custom styles to fix overlapping -->
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="{{ '/images/lam.png' | relative_url }}">
+  
+  <!-- Custom styles to avoid overlapping -->
   <style>
-    /* Basic styling for navigation and content */
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
     header {
       background-color: #f8f9fa;
       padding: 20px;
-      position: fixed; /* Fix the header at the top */
+      position: fixed;
       top: 0;
       width: 100%;
-      z-index: 1000; /* Ensure it stays on top */
+      z-index: 1000;
     }
 
     main {
-      margin-top: 80px; /* Create space so content doesn't overlap with header */
+      margin-top: 80px; /* Adjusts for fixed header */
       padding: 20px;
     }
 
@@ -37,15 +39,14 @@
     }
 
     nav ul {
-      list-style-type: none;
-      margin: 0;
+      list-style: none;
       padding: 0;
       display: flex;
-      justify-content: space-around;
+      justify-content: center;
     }
 
     nav ul li {
-      margin-right: 15px;
+      margin: 0 15px;
     }
 
     nav ul li a {
@@ -57,8 +58,8 @@
       text-decoration: underline;
     }
   </style>
-  
 </head>
+
 <body>
   <header>
     <nav>
@@ -78,4 +79,5 @@
     <p>&copy; {{ site.time | date: '%Y' }} {{ site.title }}</p>
   </footer>
 </body>
+
 </html>
