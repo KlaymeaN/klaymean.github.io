@@ -1,85 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{ page.title }} - {{ site.title }}</title>
-  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
-  
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" href="{{ '/images/lam.png' | relative_url }}">
-  
-  <!-- Custom styles to avoid overlapping -->
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-    }
-
-    header {
-      background-color: #f8f9fa;
-      padding: 20px;
-      position: fixed;
-      top: 0;
-      width: 100%;
-      z-index: 1000;
-    }
-
-    main {
-      margin-top: 80px; /* Adjusts for fixed header */
-      padding: 20px;
-    }
-
-    footer {
-      background-color: #f1f1f1;
-      padding: 10px;
-      text-align: center;
-      margin-top: 50px;
-    }
-
-    nav ul {
-      list-style: none;
-      padding: 0;
-      display: flex;
-      justify-content: center;
-    }
-
-    nav ul li {
-      margin: 0 15px;
-    }
-
-    nav ul li a {
-      text-decoration: none;
-      color: #333;
-    }
-
-    nav ul li a:hover {
-      text-decoration: underline;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Simple Site</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="images/lam.png">
 </head>
-
 <body>
-  {% include header.html %}
-  <header>
-    <nav>
-      <ul>
-        {% for link in site.nav_links %}
-          <li><a href="{{ link.url | relative_url }}">{{ link.title }}</a></li>
-        {% endfor %}
-      </ul>
-    </nav>
-  </header>
-
-  <main>
-    {{ content }}
-  </main>
-
-  <footer>
-    <p>&copy; {{ site.time | date: '%Y' }} {{ site.title }}</p>
-  </footer>
-   {% include footer.html %}
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Welcome to My Simple Site</h1>
+        <p>This is the home page.</p>
+    </main>
+    <footer>
+        <p>&copy; 2024 My Simple Site</p>
+    </footer>
 </body>
-
 </html>
