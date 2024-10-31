@@ -1,61 +1,69 @@
-/*header style*/
+/* Header style */
 header {
-    text-align: center; 
-    padding: 20px;
- }
- /*navigation menu style*/
- nav {
-    text-align: center;
-    word-spacing: 30px;
-    Padding: 10px;
- }
- /*creating the two-column layout*/
- *{
-    box-sizing: border-box;
- }
- .row {
-    display: flex;
-    flex-wrap: wrap;
- }
- .post-text-box {
-    flex: 70%;
-    padding: 20px;
- }
- .profile {
-    flex: 70%;
-    padding: 20px;
- }
- /*profile image and heading style*/
- .profile img {
-    width: 120px;
-    display: block;
-    margin-left: 0;
-    margin-right: 0;
- }
- .profile h1 {
-    text-align: center;
- }
+   text-align: center; 
+   padding: 20px;
+}
 
- /*navigation bar style*/
+/* Navigation menu style */
 nav {
-    text-align: center;
-    word-spacing: 30px;
-    padding: 10px;
-    background-color: #1075f0 ;
-    font-family: Helvetica;
-    
- }
- /*navigation bar button style*/
- nav a {
-    color: #b4b703;
-    text-decoration: none;
-    font-size: larger;
- }
+   text-align: center;
+   word-spacing: 30px;
+   padding: 10px; /* Corrected 'Padding' to 'padding' */
+   background-color: #1075f0; /* Background color for navigation */
+   font-family: Helvetica; /* Navigation font */
+}
 
- body {
-    
-    background-color:#0866d9 ;
-    text-align:center ;
-    margin:auto;
+/* Navigation bar button style */
+nav a {
+   color: #b4b703; /* Link color */
+   text-decoration: none; /* Remove underline */
+   font-size: larger; /* Increase font size */
+}
 
- }
+/* Creating the two-column layout */
+* {
+   box-sizing: border-box; /* Ensure padding and borders are included in total width and height */
+}
+
+.row {
+   display: flex; /* Use flexbox for layout */
+   flex-wrap: wrap; /* Allow wrapping of items */
+}
+
+.post-text-box {
+   flex: 70%; /* Take 70% of the row */
+   padding: 20px; /* Padding inside the box */
+}
+
+.profile {
+   flex: 70%; /* Take 70% of the row */
+   padding: 20px; /* Padding inside the box */
+}
+
+/* Profile image and heading style */
+.profile img {
+   width: 120px; /* Set width of profile image */
+   display: block; /* Display as block element */
+   margin-left: auto; /* Center align horizontally */
+   margin-right: auto; /* Center align horizontally */
+}
+
+.profile h1 {
+   text-align: center; /* Center the heading */
+}
+
+/* Body style */
+body {
+   font-family: 'Apple II', sans-serif; /* Use Apple II font */
+   background-color: #0866d9; /* Background color for the body */
+   text-align: center; /* Center align text */
+   margin: auto; /* Center the body content */
+}
+
+/* Font face for Apple II */
+@font-face {
+   font-family: 'Apple II'; /* Define the font name */
+   src: url('fonts/apple-ii.ttf') format('truetype'); /* Specify the font file */
+   font-weight: normal; /* Define font weight */
+   font-style: normal; /* Define font style */
+}

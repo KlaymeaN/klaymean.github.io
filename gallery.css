@@ -90,10 +90,17 @@ nav {
  }
 
  body {
-    
+    font-family: 'Apple II', sans-serif;
     background-color:#00224b ;
     text-align:center ;
     margin:auto;
     color:#c9d005
 
  }
+ @font-face {
+    font-family: 'Apple II'; /* Define the font name */
+    src: url('fonts/apple-ii.ttf') format('truetype'); /* Specify the font file */
+    font-weight: normal; /* Define font weight */
+    font-style: normal; /* Define font style */
+ }
+ 

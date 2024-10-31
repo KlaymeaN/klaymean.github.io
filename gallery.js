@@ -11,7 +11,7 @@ var thumbnails = document.querySelectorAll(".thumbnail");
 thumbnails.forEach(function(thumbnail) {
     thumbnail.addEventListener("click", function() {
         modal.style.display = "block";
-        modalImg.src = this.src.replace('-thumbnail', ''); // Load the larger image version
+        modalImg.src = this.src; // Load the larger image version
         captionText.innerHTML = this.alt;
     });
 });
